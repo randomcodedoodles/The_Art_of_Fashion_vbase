@@ -71,7 +71,30 @@
     text-align: left;
     color: white;
 }
+/*
+.mySlide::before {
+    content: "";
+    width: 256px;
+    height: 100%;
+}
+.mySlide .slide-text{ border: 1px solid green;
+    
+    width: 544px;
+    /*height: 100%;
+    height: 430px;
 
+    display: flex;
+    align-items: center;
+    /*justify-content: center;
+    z-index: 2; /*not woring with relative position here
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}*/
 .contactus-btn {
     width: 120px;
     height: 40px;
@@ -83,7 +106,12 @@
     margin-top: 10px;
 }
 
+.swiper-button-next {
+    color:greenyellow
+}
+.swiper-button-prev {
 
+}
 
 @media (max-width:600px){
     .mySlide .slide-text {

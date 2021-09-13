@@ -32,6 +32,7 @@ export const Individual = () => {
                 Explicabo maxime quae quod. Vero, quasi saepe. 
                 Laborum, minus. Sint maxime asperiores reprehenderit adipisci, amet vitae aliquid voluptatibus animi veritatis neque magnam. 
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
                     </p>
                     <button className="login-btn">Log in</button>
                 

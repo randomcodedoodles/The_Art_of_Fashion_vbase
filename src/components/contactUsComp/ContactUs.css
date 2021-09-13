@@ -60,10 +60,11 @@
       width: 48%;
   }
 */
+/*
 .contact-us {
     position: relative;
     overflow: hidden;
-    height: 826px;
+    min-height: 826px;
 }
 .contact-us:before {
     content: ' ';
@@ -75,7 +76,7 @@
     background-image: url('../../Resources/Img_Contact.png');
     background-size: contain;
     background-repeat:no-repeat;
-    height: 826px;
+    /*min-height: 826px;
     background-position: right 69px top 0px;
     
     -moz-transform: scale(1.15,1.12);
@@ -85,17 +86,102 @@
     -webkit-background-size: contain;
     background-size: contain;
 
-    /*z-index: -1;*/
-  }
+    /*z-index: -1;
+  }*/
 
+  .contact-us {
+    background: url('../../Resources/Img_Contact.png');
+		background-repeat:no-repeat;
+    
+    background-position: right 69px top 0px;
+     
+    
+    background-position: right top -50px;
+    /*auto scale bgimg as content expand height (when content (contact-form) is relative /part of /inside of contact-us, rather than absolute)*/
+    -moz-background-size: 48% auto;/*contain;*/
+    -webkit-background-size: 48% auto;/*contain;*/
+    background-size: 48% auto;/*contain;*/
+    width: 68%;
+    min-height: 856px;
+    height: 100%;
+  }
+  
+/*
   .contact-form {
     text-align: left;
     z-index: 5;
     position: absolute;
     top: 0;
     left: 0;
-    width: 544px;
+    width: 500px; /*544px
+  }*/
+  .contact-form {
+    text-align: left;
+    width: 500px; /*544px*/
   }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .primary, .secondary, .fourth {
+    width: 100%;
+    border: 1px solid purple;
+  }
+ 
+  .secondary {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+  }
+   
+  /*.fourth {
+    /*display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(4,1fr);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(32, 8, 248);
+  }*/
+  .half, .quarter {
+    border: 1px solid red;
+  }
+  .half {
+    width: 238px;
+  }
+
+  .quarter {
+    width: 107px;
+  }
+
+  .half .form-control, .quarter .form-control, .primary.phone .form-control, .phone-btn,
+  .message .form-control, .message .form-label {
+    width: 100%;
+  }
+.form-control, .phone-btn, .submit-btn {
+  height: 30px;
+}
+
+  .form-group, .address-1, .address-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .form-group {
+    height: 60px;
+    
+  }
+
+.half, .quarter, .primary{
+  margin-bottom: 20px;
+}
+
+.max-length-req {
+  float: right;
+}
 
   @media (max-width:600px){
     .contact-us { width: 90%; margin: 0 auto; background: none;}
