@@ -1,0 +1,38 @@
+
+.App-header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    width:80%;
+    margin: 0 auto;
+  }
+  .App-header nav .logo{
+    width: 166px;
+    border: 2px solid green;
+    
+  }
+  .App-header nav .nav-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+  }
+  .App-header .nav-links ul {
+    display: flex;
+  }
+  .App-header .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 22px;
+    position: relative;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border:2px solid red;
+  }
+  .App-header .nav-links ul li a{
+    text-decoration: none;
+    border: 2px solid yellow;
+  }
+  

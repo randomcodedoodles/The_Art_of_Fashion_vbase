@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import "swiper/css/bundle";
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

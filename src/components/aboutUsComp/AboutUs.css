@@ -1,0 +1,32 @@
+.about-us {
+    width: 68%;
+    margin: 68px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .about-us .officeImg {
+    overflow: hidden;
+    width: 600px;
+    border-radius: 3px;
+  }
+  .about-us img {
+    /*width: 600px;*/
+    width: 100%;
+    transform: scale(1.05);
+    
+    /*border-radius: 0px;*/
+    -ms-transform:scale(1.05); /* IE 9 */
+    -moz-transform:scale(1.05); /* Firefox */
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -o-transform:scale(1.05); /* Opera */
+  }
+
+  @media (max-width:600px){
+    .about-us { width: 90%; margin: 0 auto;}
+    .about-us .officeImg { width: 100%; }
+  }
+
+

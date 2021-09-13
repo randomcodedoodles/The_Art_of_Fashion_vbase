@@ -1,0 +1,64 @@
+.individual {
+    width: 100%;
+    background: url("../../Resources/shutterstock_1302552622.jpg");
+    background-position: top 8% center;
+    background-size: 100%; /*cover; contain;*/
+    background-repeat:no-repeat;
+    height: 425px;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+/*
+.individual-contentframe { border: 1px solid red;
+    width: 68%;
+    /*margin: 30px auto;
+    margin: 0 auto;
+}
+
+.individual-content { border: 1px solid green;
+    width: 41%;
+    text-align: left;
+    padding: 27px;
+    background: brown;
+    color: white;
+}*/
+.individual {
+    position: relative;
+}
+.individual-content { border: 1px solid green;
+    width: 455px;
+    text-align: left;
+    padding: 27px;
+    background: brown;
+    color: white;
+    position: absolute;
+    left: 256px;
+    border-radius: 5px;
+}
+
+.individual-content h1 {
+    margin-top: 0;
+}
+.login-btn {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: royalblue;
+    margin-top: 9px;
+}
+
+@media (max-width:600px){
+    .individual-content {
+        width: calcs(90%-54px);
+        /*margin: 0 auto;*/
+        left: 30px;
+        font-size: 10px;
+        opacity: 0.5;
+    }
+    .login-btn {
+        width: 100%;
+    }
+  }

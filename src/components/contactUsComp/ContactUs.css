@@ -1,0 +1,104 @@
+.contact-us{
+    border:10px solid blue;
+}
+.contact-us {
+    width: 68%;
+    margin: 0 auto;
+  }
+/*
+  .contact-us {
+    background: url('../../Resources/Img_Contact.png');
+		/*no-repeat 50% 40%;
+	background-size: contain;/*100% 100%; cover;
+    background-repeat:no-repeat;
+    height: 826px;/*960px;
+    background-position: right top 2px;
+    
+
+    -moz-transform: scale(1.15,1.15);
+    -webkit-transform: scale(1.15,1.15);
+    transform: scale(1.15,1.15);
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    width: 60%;
+  }
+.App-container {
+    overflow: hidden;
+}
+*/
+/*
+.contact-us {
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+}
+.contact-dna {
+    background: url('../../Resources/Img_Contact.png');
+	background-size: contain;
+    background-repeat:no-repeat;
+    height: 826px;
+    background-position: right 69px top 0px;
+    
+    
+    -moz-transform: scale(1.15,1.12);
+    -webkit-transform: scale(1.15,1.12);
+    transform: scale(1.15,1.12);
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid red;
+  }
+
+  .contact-form {
+      border: 1px solid greenyellow;
+      width: 48%;
+  }
+*/
+.contact-us {
+    position: relative;
+    overflow: hidden;
+    height: 826px;
+}
+.contact-us:before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Resources/Img_Contact.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 826px;
+    background-position: right 69px top 0px;
+    
+    -moz-transform: scale(1.15,1.12);
+    -webkit-transform: scale(1.15,1.12);
+    transform: scale(1.15,1.12);
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    /*z-index: -1;*/
+  }
+
+  .contact-form {
+    text-align: left;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 544px;
+  }
+
+  @media (max-width:600px){
+    .contact-us { width: 90%; margin: 0 auto; background: none;}
+    .contact-us::before {background: none;}
+    .contact-form { width: 100%;}
+  }

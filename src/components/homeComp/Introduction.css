@@ -1,0 +1,83 @@
+.introduction {
+    width: 68%;
+    margin: 60px auto;
+    border: 2px solid red;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+/*
+.introduction {
+    width: 68%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+.introduction .description{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.left-brief { border: 1px solid greenyellow;
+    width: 500px;
+    /*height: 300px;*/
+    padding: 0;
+    text-align: left;
+    position: relative;
+    height: 100%;/*???*/
+}
+.left-brief h2 { border: 1px solid black;
+    margin-top: 0;
+}
+.left-brief .brief,  .left-brief .list{ border: 1px solid purple;
+    
+}
+.left-brief .detail-btn {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 120px;
+    height: 40px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+}
+.right-img{ border: 2px solid yellowgreen;
+    width: 505px;
+    /*height: 300px;*/
+    /*height: 100%;*/
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.right-img img{  border: 2px solid greenyellow;
+    width: 505px;
+    /*height: 300px;*/
+    /*height: 100%;*/
+    transform: scale(1.12,1.15);
+    /*border-radius: 5px;*/
+
+    -ms-transform:scale(1.12,1.15); /* IE 9 */
+    -moz-transform:scale(1.12,1.15); /* Firefox */
+    -webkit-transform:scale(1.12,1.15); /* Safari and Chrome */
+    -o-transform:scale(1.12,1.15); /* Opera */
+    width: 505px;
+}
+
+@media (max-width:600px){
+    .introduction {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .left-brief, .right-img{ width: 100%; margin: 0 auto;}
+    .right-img img { width: 500px;}
+    .left-brief .detail-btn { width: 100%;}
+  }
