@@ -19,6 +19,28 @@ export const Header = () => {
                         <li>
                             <Link to='/contact-us'> CONTACT US </Link>
                         </li>
+                    </ul>
+                </div>
+                <div className="login">Log in</div>
+            </nav>
+        </header>
+    )
+}
+/*
+<header className="App-header">
+            <nav>
+                <div className="logo"><img src={logo} alt="company"/></div>
+                <div className="nav-links">
+                    <ul>
+                        <li>
+                            <Link to='/'> HOME </Link>
+                        </li>
+                        <li>
+                            <Link to='/about-us'> ABOUT US </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact-us'> CONTACT US </Link>
+                        </li>
                         <li>
                             <Link to='#'> LOGIN </Link>
                         </li>
@@ -26,5 +48,4 @@ export const Header = () => {
                 </div>
             </nav>
         </header>
-    )
-}
+        */

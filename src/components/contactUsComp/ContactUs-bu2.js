@@ -211,15 +211,7 @@ export const ContactUs = () => {
                         Explicabo maxime quae quod. Vero, quasi saepe. Laborum, minus. 
                         </p>
                         
-                        {submitted ? (
-                        <div className="submit-success">
-                            <div className="submit-valid"><img src={valid} alt="submit successfully" /></div>
-                            <div className="submit-text">
-                                <h5 className="submit-msg">Your Message has been sent </h5>
-                                <p className="submit-note">We will be in touch of you within 24 hours</p>
-                            </div>
-                        </div>
-                        ) : (
+                        {submitted ? (<div className="submit-success">dfjkhkj</div>) : (
                         <form action="" className="form primary" onSubmit={(e) => {handleFormSubmission(e)}}>
                             <div className="secondary name-email">
                                 <div className="form-group half name">
@@ -251,17 +243,11 @@ export const ContactUs = () => {
                             </div>
                             {userData.bIncludeAddressDetails ? (<>
                             <div className="secondary address">
-                                <div className="form-group half address-line1">
-                                    <label htmlFor="AddressLine1" className="form-label">Addres Line1: </label>
-                                    <input type="text" id="AddressLine1" name="AddressLine1" className="form-control" value={userData?.AddressDetails?.AddressLine1} required onChange={handleInputChange}/>
-                                </div>
-                                <div className="form-group half address-line2">
-                                    <label htmlFor="AddressLine12" className="form-label">Address line2: </label>
-                                    <input type="text" id="AddressLine2" name="AddressLine2" className="form-control" value={userData?.AddressDetails?.AddressLine2} onChange={handleInputChange}/>
-                                </div>
-                            </div>
-                            <div className="secondary address">
                                 <div className="address-1 half">
+                                    <div className="form-group half address-line1">
+                                        <label htmlFor="AddressLine1" className="form-label">Addres Line1: </label>
+                                        <input type="text" id="AddressLine1" name="AddressLine1" className="form-control" value={userData?.AddressDetails?.AddressLine1} required onChange={handleInputChange}/>
+                                    </div>
                                     <div className="secondary address-detail1">
                                         <div className="form-group quarter address-detail1">
                                             <label htmlFor="CityTown" className="form-label">City/town: </label>
@@ -272,9 +258,13 @@ export const ContactUs = () => {
                                             <input type="text" id="StateCounty" name="StateCounty" className="form-control" value={userData?.AddressDetails?.StateCounty} required onChange={handleInputChange}/>
                                         </div>
                                     </div>
-                                </div>
+                                    </div>
                                 <div className="address-2 half">
-                                    <div className="secondary address-detail2">
+                                    <div className="form-group half address-line2">
+                                        <label htmlFor="AddressLine12" className="form-label">Address line2: </label>
+                                        <input type="text" id="AddressLine2" name="AddressLine2" className="form-control" value={userData?.AddressDetails?.AddressLine2} onChange={handleInputChange}/>
+                                    </div>
+                                    <div className="secondary address-detail1">
                                         <div className="form-group quarter address-detail2">
                                             <label htmlFor="Postcode" className="form-label">postcode: </label>
                                             <input type="text" id="Postcode" name="Postcode" className="form-control" value={userData?.AddressDetails?.Postcode} required onChange={handleInputChange}/>
@@ -326,37 +316,25 @@ export const ContactUs = () => {
             */
 
             /*
-            <div className="secondary address">
-                                <div className="address-1 half">
-                                    <div className="form-group half address-line1">
-                                        <label htmlFor="AddressLine1" className="form-label">Addres Line1: </label>
-                                        <input type="text" id="AddressLine1" name="AddressLine1" className="form-control" value={userData?.AddressDetails?.AddressLine1} required onChange={handleInputChange}/>
+            <div className="fourth address">
+                                <div className="secondary address-detail1">
+                                    <div className="form-group half address-detail1">
+                                        <label htmlFor="CityTown" className="form-label">City/town: </label>
+                                        <input type="text" id="CityTown" name="CityTown" className="form-control" value={userData?.AddressDetails?.CityTown} required onChange={handleInputChange}/>
                                     </div>
-                                    <div className="secondary address-detail1">
-                                        <div className="form-group quarter address-detail1">
-                                            <label htmlFor="CityTown" className="form-label">City/town: </label>
-                                            <input type="text" id="CityTown" name="CityTown" className="form-control" value={userData?.AddressDetails?.CityTown} required onChange={handleInputChange}/>
-                                        </div>
-                                        <div className="form-group quarter address-detail1">
-                                            <label htmlFor="county" className="form-label"> state/county: </label>
-                                            <input type="text" id="StateCounty" name="StateCounty" className="form-control" value={userData?.AddressDetails?.StateCounty} required onChange={handleInputChange}/>
-                                        </div>
+                                    <div className="form-group half address-detail1">
+                                        <label htmlFor="county" className="form-label"> state/county: </label>
+                                        <input type="text" id="StateCounty" name="StateCounty" className="form-control" value={userData?.AddressDetails?.StateCounty} required onChange={handleInputChange}/>
                                     </div>
+                                </div>
+                                <div className="secondary address-detail1">
+                                    <div className="form-group half address-detail2">
+                                        <label htmlFor="Postcode" className="form-label">postcode: </label>
+                                        <input type="text" id="Postcode" name="Postcode" className="form-control" value={userData?.AddressDetails?.Postcode} required onChange={handleInputChange}/>
                                     </div>
-                                <div className="address-2 half">
-                                    <div className="form-group half address-line2">
-                                        <label htmlFor="AddressLine12" className="form-label">Address line2: </label>
-                                        <input type="text" id="AddressLine2" name="AddressLine2" className="form-control" value={userData?.AddressDetails?.AddressLine2} onChange={handleInputChange}/>
-                                    </div>
-                                    <div className="secondary address-detail2">
-                                        <div className="form-group quarter address-detail2">
-                                            <label htmlFor="Postcode" className="form-label">postcode: </label>
-                                            <input type="text" id="Postcode" name="Postcode" className="form-control" value={userData?.AddressDetails?.Postcode} required onChange={handleInputChange}/>
-                                        </div>
-                                        <div className="form-group quarter address-detail2">
-                                            <label htmlFor="Country" className="form-label"> country: </label>
-                                            <input type="text" id="Country" name="Country" className="form-control" value={userData?.AddressDetails?.Country} required onChange={handleInputChange}/>
-                                        </div>
+                                    <div className="form-group half address-detail2">
+                                        <label htmlFor="Country" className="form-label"> country: </label>
+                                        <input type="text" id="Country" name="Country" className="form-control" value={userData?.AddressDetails?.Country} required onChange={handleInputChange}/>
                                     </div>
                                 </div>
                             </div>

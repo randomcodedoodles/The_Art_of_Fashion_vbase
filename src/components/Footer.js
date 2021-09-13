@@ -1,9 +1,9 @@
-
+import "./Footer.css"
 
 export const Footer = () => {
     return (
         <footer className="App-footer">
-            Website Development By XW
+            <div className="footer-mark">Website Development By XW</div>
         </footer>
     )
 }

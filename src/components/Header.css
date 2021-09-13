@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     border: 2px solid black;
-    width:80%;
+    width:68%;
     margin: 0 auto;
   }
   .App-header nav .logo{
@@ -20,19 +20,58 @@
   }
   .App-header .nav-links ul {
     display: flex;
+    border: 1px solid blue;
+    justify-content: flex-end;
   }
   .App-header .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 22px;
+    padding: 8px 18px;
     position: relative;
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 2px;
     font-weight: 500;
     border:2px solid red;
+    text-transform: uppercase;
   }
   .App-header .nav-links ul li a{
     text-decoration: none;
     border: 2px solid yellow;
   }
+  .App-header .nav-links ul li:last-child {
+    padding-right: 26px;
+  }
+
+  .login {
+    border: 1px solid orange;
+    font-size: 8px;
+    padding: 9px 30px;
+    background-color: rgb(135, 206, 250, 0.2);
+    font-weight: bold;
+    color:mediumblue;
+  }
   
+  @media (max-width:600px){
+    .App-header {
+      width: 600px;
+      height: 58px;
+    }
+    .App-header nav .nav-links{
+      display: none;
+    }
+    .App-header nav, .App-header nav .logo {
+      width: 100%;
+      
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .App-header nav .logo img {
+      width: 50%;
+      
+      height: 50%;
+      /*object-fit: fill;*/
+    
+    }
+  }

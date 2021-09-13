@@ -69,9 +69,15 @@
     .individual-content {
         width: calcs(90%-54px);
         /*margin: 0 auto;*/
-        left: 30px;
+        /*left: 30px;*/
         font-size: 10px;
         opacity: 0.5;
+    }
+    .individual::before {display: none;}
+    .individual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .login-btn {
         width: 100%;

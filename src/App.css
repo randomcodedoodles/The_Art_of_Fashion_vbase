@@ -6,8 +6,9 @@
   min-height: 826px;
   display: flex;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
-.App-header, .App-container {
+.App-header, .App-container, .App-footer {
   width: 100%;
 }
 
@@ -27,20 +28,10 @@
 
 
 
-.App-footer{
-  height: 60px;
-  border-top: 1px solid grey;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: grey;
-  font-size: 0.5em;
 
-  width: 68%;
-  margin: 0 auto;
-}
 
 
 @media (max-width:600px){
   .App-container {width: 600px;}
+  .App-header, .App-footer {width: 600px;}
 }

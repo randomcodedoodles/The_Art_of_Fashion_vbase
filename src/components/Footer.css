@@ -1,0 +1,16 @@
+.App-footer .footer-mark{
+    height: 60px;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: grey;
+    font-size: 0.5em;
+  
+    width: 68%;
+    margin: 0 auto;
+  }
+
+  @media (max-width:600px){
+    .App-footer .footer-mark { width: 90%; }
+  }
