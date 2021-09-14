@@ -1,4 +1,4 @@
-import "./Individual.css"
+import "./styles/Individual.css"
 
 export const Individual = () => {
     /*

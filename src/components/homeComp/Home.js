@@ -3,7 +3,7 @@ import { Gallery } from "./Gallery"
 import { Individual } from "./Individual"
 import { Introduction } from "./Introduction"
 import { Service } from "./Service"
-//import "./Home.css"
+//import "./styles/Home.css"
 
 export const Home = () => {
     return (

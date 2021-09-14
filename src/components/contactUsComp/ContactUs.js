@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Footer } from "../Footer"
-import "./ContactUs.css"
+import "./styles/ContactUs.css"
 import axios from "axios"
 import arrow from "../../Resources/Icon_Arrow.svg"
 import submit from "../../Resources/Icon_Submit.svg"

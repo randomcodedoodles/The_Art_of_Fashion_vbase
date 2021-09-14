@@ -1,7 +1,9 @@
-import case1 from '../../Resources/shutterstock_407632243.jpg'
-import case2 from '../../Resources/shutterstock_696636346.jpg'
-import case3 from '../../Resources/shutterstock_696636415.jpg'
-import case4 from '../../Resources/shutterstock_1302552622.jpg'
+/*
+import case1 from '../../../Resources/shutterstock_407632243.jpg'
+import case2 from '../../../Resources/shutterstock_696636346.jpg'
+import case3 from '../../../Resources/shutterstock_696636415.jpg'
+import case4 from '../../../Resources/shutterstock_1302552622.jpg'
+*/
 import { Link, useHistory} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
@@ -40,7 +42,7 @@ import SwiperCore, {
 //import {Swiper} from "swiper/react/swiper-react";
 //import Swiper from 'swiper/dist/js/swiper'
 //import Swiper from 'swiper';
-import "./Gallery.css";
+import "./styles/Gallery.css";
 
 
 // install Swiper modules

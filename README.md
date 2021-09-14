@@ -4,8 +4,7 @@ There are separate designs for the desktop and mobile views of the site. The des
 be found at https://invis.io/92U5LEC4HFW. The mobile design can be found at
 https://invis.io/7HU5N51T4US.
 
-A REST API that had been created is used in this App. Its root URL is https://interview-
-assessment.api.avamae.co.uk, and documentation for its endpoints can be found at
+A REST API that had been created is used in this App. Its root URL is https://interview-assessment.api.avamae.co.uk, and documentation for its endpoints can be found at
 https://interview-assessment.api.avamae.co.uk/index.html.
 
 The design has three pages:

@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import "./Service.css"
+import "./styles/Service.css"
 export const Service = () => {
     return (
         <div className="service">

@@ -90,7 +90,7 @@
   }*/
 
   .contact-us {
-    background: url('../../Resources/Img_Contact.png');
+    background: url('../../../Resources/Img_Contact.png');
 		background-repeat:no-repeat;
     
     background-position: right 69px top 0px;
@@ -236,7 +236,7 @@
 }
 .submit-btn::before {
   content: "";
-  background: url("../../Resources/Icon_Submit.svg") no-repeat;
+  background: url("../../../Resources/Icon_Submit.svg") no-repeat;
   width: 15px;
   height: 15px;
   position: absolute;
