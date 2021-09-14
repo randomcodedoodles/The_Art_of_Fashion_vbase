@@ -1,4 +1,4 @@
-import { Footer } from "../Footer"
+
 import "./styles/AboutUs.css"
 import midImg from "../../Resources/shutterstock_696636415.jpg"
 

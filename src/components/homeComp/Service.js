@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom"
 import "./styles/Service.css"
+
 export const Service = () => {
     return (
         <div className="service">
@@ -39,5 +40,3 @@ export const Service = () => {
         </div>
     )
 }
-//<button className="contact-btn"> <Link to='/contact-us'> Contact us </Link> </button>
-//<Link to='/contact-us'> <button className="contact-btn"> Contact us </button> </Link>

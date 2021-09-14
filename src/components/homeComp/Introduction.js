@@ -25,26 +25,3 @@ export const Introduction = () => {
         </div>
     )
 }
-/*
-<div className="introduction">
-            <div className="description">
-                <div className="left-brief">gfdgfd</div>
-                <div className="right-img">fdsfd</div>
-            </div>
-        </div>
-*/
-/*
-<div className="list">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo maxime quae quod. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Obcaecati libero asperiores amet nam labore ea! 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                </div>
-
-                <ul>
-                        <li>Te obcaecati libero asperiores amet nam labore ea!</li>
-                        <li>Te velit, consectetur provident! Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Ut vero, quasi saepe. Laborum, minus.</li>
-                        <li>Ut explicabo maxime quae quod. Vero, quasi saepe. Laborum, minus.</li>
-                    </ul>
-                */

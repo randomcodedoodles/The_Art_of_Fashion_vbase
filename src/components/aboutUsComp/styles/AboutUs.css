@@ -13,11 +13,9 @@
     border-radius: 3px;
   }
   .about-us img {
-    /*width: 600px;*/
     width: 100%;
     transform: scale(1.05);
     
-    /*border-radius: 0px;*/
     -ms-transform:scale(1.05); /* IE 9 */
     -moz-transform:scale(1.05); /* Firefox */
     -webkit-transform:scale(1.05); /* Safari and Chrome */
@@ -58,8 +56,6 @@
     margin-top: 23px;
     margin-bottom: 8px;
   }
-  /*.afterImg h5 { font-size: 15px;}
-  .afterImg ul { margin-top: 0;}*/
   .afterImg h5 { 
     font-size: 14px;
     margin-bottom: 0px;

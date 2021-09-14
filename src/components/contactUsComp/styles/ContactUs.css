@@ -1,95 +1,9 @@
-.contact-us{
-    border:10px solid blue;
-}
+
 .contact-us {
     width: 68%;
     margin: 0 auto;
   }
-/*
-  .contact-us {
-    background: url('../../Resources/Img_Contact.png');
-		/*no-repeat 50% 40%;
-	background-size: contain;/*100% 100%; cover;
-    background-repeat:no-repeat;
-    height: 826px;/*960px;
-    background-position: right top 2px;
-    
-
-    -moz-transform: scale(1.15,1.15);
-    -webkit-transform: scale(1.15,1.15);
-    transform: scale(1.15,1.15);
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    background-size: contain;
-
-    width: 60%;
-  }
-.App-container {
-    overflow: hidden;
-}
-*/
-/*
 .contact-us {
-    overflow: hidden;
-    height: 100%;
-    padding: 0;
-}
-.contact-dna {
-    background: url('../../Resources/Img_Contact.png');
-	background-size: contain;
-    background-repeat:no-repeat;
-    height: 826px;
-    background-position: right 69px top 0px;
-    
-    
-    -moz-transform: scale(1.15,1.12);
-    -webkit-transform: scale(1.15,1.12);
-    transform: scale(1.15,1.12);
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    background-size: contain;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid red;
-  }
-
-  .contact-form {
-      border: 1px solid greenyellow;
-      width: 48%;
-  }
-*/
-/*
-.contact-us {
-    position: relative;
-    overflow: hidden;
-    min-height: 826px;
-}
-.contact-us:before {
-    content: ' ';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../Resources/Img_Contact.png');
-    background-size: contain;
-    background-repeat:no-repeat;
-    /*min-height: 826px;
-    background-position: right 69px top 0px;
-    
-    -moz-transform: scale(1.15,1.12);
-    -webkit-transform: scale(1.15,1.12);
-    transform: scale(1.15,1.12);
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    background-size: contain;
-
-    /*z-index: -1;
-  }*/
-
-  .contact-us {
     background: url('../../../Resources/Img_Contact.png');
 		background-repeat:no-repeat;
     
@@ -97,27 +11,18 @@
      
     
     background-position: right top -50px;
-    /*auto scale bgimg as content expand height (when content (contact-form) is relative /part of /inside of contact-us, rather than absolute)*/
-    -moz-background-size: 48% auto;/*contain;*/
-    -webkit-background-size: 48% auto;/*contain;*/
-    background-size: 48% auto;/*contain;*/
+    -moz-background-size: 48% auto;
+    -webkit-background-size: 48% auto;
+    background-size: 48% auto;
     width: 68%;
     min-height: 856px;
     height: 100%;
   }
   
-/*
+
   .contact-form {
     text-align: left;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px; /*544px
-  }*/
-  .contact-form {
-    text-align: left;
-    width: 510px; /*544px*/
+    width: 510px;
   }
   .form {
     display: flex;
@@ -125,28 +30,18 @@
   }
   .primary, .secondary, .fourth {
     width: 100%;
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
   }
  
   .secondary {
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;*/
     display: flex;
     justify-content: space-between;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
   }
-   
-  /*.fourth {
-    /*display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr 1fr;
-    /*grid-template-columns: repeat(4,1fr);
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid rgb(32, 8, 248);
-  }*/
+   /*
   .half, .quarter {
     border: 1px solid red;
-  }
+  }*/
   .half {
     width: 240px;
   }
@@ -161,10 +56,8 @@
   }
 .form-control, .phone-btn {
   height: 35px;
-}/*
-.message .form-control {
-  min-height: 800px;
-}*/
+}
+
 .form-group.message.primary {
   min-height: 155px;
 }
@@ -196,8 +89,8 @@
   color: grey;
   font-size: 1px;
 }
-
-.form-control,  [type="checkbox"]:not(:checked), .checkbox {
+/*[type="checkbox"]:not(:checked)*/
+.form-control, .checkbox {
   outline: none;
   background-color: rgba(214, 214, 218, 0.5);
   border: 1px solid rgb(128, 128, 128, 0.5);
@@ -219,7 +112,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*padding: 5px auto;*/
 }
 .submit-btn {
   background-color: rgb(22, 80, 155);
@@ -263,8 +155,7 @@
   height: 17px;
   width: 17px;
   border-radius: 2px;
-  /*border:1px solid rgba(214, 214, 218, 0.5);*/
-  content: ""; /*div replaces input checkbox; checked position absolute*/
+  content: ""; 
   position: relative;
 }
 .checkbox {
@@ -274,9 +165,6 @@
 .checkbox.checked {
   border:1px solid royalblue;
   position: relative;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
 }
 .checkbox.checked::after {
   content: "";
@@ -285,49 +173,10 @@
   height: 11px;
   background: royalblue;
   border-radius: 3px;
-  /*margin: auto auto;*/
-  /*text-align: center;
-  vertical-align: middle;*/
-  top: 1.5px;/*calcs(50%-5px);*/
-  left: 1.5px; /*calcs(50%-5px);*/
+  top: 1.5px;
+  left: 1.5px; 
 }
-/*
-input[type="checkbox"]:checked { 
-  -webkit-appearance: radio; /* Chrome, Safari, Opera 
-  -moz-appearance: radio;    /* Firefox 
-  -ms-appearance: radio;     /* not currently supported 
-  border-radius: 0; 
-}*/
 
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label  {
-  position: relative;
-  cursor: pointer;
-}
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-[type="checkbox"]:checked {
-  content: none;
-}
-/*[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before */
-
-[type="checkbox"]:checked:before  {
-  content: '';
-  /*position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;*/
-  width:10%; height: 10%;
-  background: #000;
-  border-radius: 2px;
-  /*box-shadow: inset 0 1px 3px rgba(0,0,0,.1);*/
-}
 
 .contact-subject {
   margin: 30px auto;
@@ -340,9 +189,7 @@ input[type="checkbox"]:checked {
   margin-top: 0;
   margin-bottom: 0;
 }
-.contact-form {
-  /*margin-top: 44px;*/
-}
+
 
   @media (max-width:480px){
     .contact-us { width: 85%; margin: 0 auto; background: none;}

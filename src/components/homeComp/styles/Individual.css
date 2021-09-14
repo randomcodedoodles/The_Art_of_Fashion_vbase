@@ -2,47 +2,24 @@
     width: 100%;
     background: url("../../../Resources/shutterstock_1302552622.jpg");
     background-position: top 8% center;
-    background-size: 100% auto; /*cover; contain;*/
+    background-size: 100% auto; 
     background-repeat:no-repeat;
     min-height: 425px;
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
+    
     justify-content: flex-start;
 }
-/*
-.individual-contentframe { border: 1px solid red;
-    width: 68%;
-    /*margin: 30px auto;
-    margin: 0 auto;
-}
 
-.individual-content { border: 1px solid green;
-    width: 41%;
-    text-align: left;
-    padding: 27px;
-    background: brown;
-    color: white;
-}*/
 .individual {
     position: relative;
-}/*
-.individual-content { border: 1px solid green;
-    width: 455px;
-    text-align: left;
-    padding: 27px;
-    background: brown;
-    color: white;
-    position: absolute;
-    left: 256px;
-    border-radius: 5px;
-}*/
-.individual::before { border: 1px solid greenyellow;
+}
+.individual::before { /*border: 1px solid greenyellow;*/
     content:"";
     width: 256px;
     height: 100%;
 }
-.individual-content { border: 1px solid green;
+.individual-content { /*border: 1px solid green;*/
     width: 455px;
     text-align: left;
     padding: 27px;
@@ -60,7 +37,7 @@
     font-size: 12px;
     line-height: 20px;
     margin-top: 24px;
-    margin-bottom: 24px; /*remove login-btn margin-top 9px*/
+    margin-bottom: 24px; 
 }
 .login-btn {
     width: 120px;
@@ -69,16 +46,14 @@
     border: none;
     border-radius: 3px;
     color: royalblue;
-    /*margin-top: 9px;*/
+    
     font-weight: bold;
     font-size: 12px;
 }
 
 @media (max-width:480px){
     .individual-content {
-        width: 354px; /*calcs(85%-54px);*/
-        /*margin: 0 auto;*/
-        /*left: 30px;*/
+        width: 354px; 
         font-size: 10px;
         opacity: 0.5;
     }
@@ -101,6 +76,6 @@
 
   @media (max-width:360px){
     .individual-content {
-        width: 252px; /*calcs(85%-54px);*/
+        width: 252px; 
     }
 }
