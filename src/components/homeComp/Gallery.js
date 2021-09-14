@@ -2,9 +2,10 @@ import case1 from '../../Resources/shutterstock_407632243.jpg'
 import case2 from '../../Resources/shutterstock_696636346.jpg'
 import case3 from '../../Resources/shutterstock_696636415.jpg'
 import case4 from '../../Resources/shutterstock_1302552622.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useHistory} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+
 
 /*
   // core version + navigation, pagination modules:
@@ -157,7 +158,10 @@ export const Gallery = () => {
             console.log(bannerItems)
         }, [bannerItems])
 
-
+        const history = useHistory();
+        const getContactForm = () => {
+            history.push('/contact-us')
+        } //onClick={()=>{getContactForm()}} onClick={getContactForm}
     return (
         <div className="gallery">
             <Swiper navigation={true} pagination={{"dynamicBullets": true}} className="mySwiper">
@@ -168,7 +172,7 @@ export const Gallery = () => {
                             <div className="slide-text">
                                         <h1>{_item.Title}</h1>
                                         <p>{_item.Subtitle}</p>
-                                        <button className="contactus-btn" onClick={()=>{}}>Contact us</button>
+                                        <button className="contactus-btn" onClick={() => history.push('/contact-us')}>Contact us</button>
                                     
                             </div>
                         </SwiperSlide>

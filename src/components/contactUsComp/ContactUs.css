@@ -333,6 +333,7 @@ input[type="checkbox"]:checked {
   margin: 30px auto;
   font-size: 12px;
   font-weight: bold;
+  line-height: 20px;
 }
 .contact-title {
   padding-top: 54px;
@@ -343,8 +344,8 @@ input[type="checkbox"]:checked {
   /*margin-top: 44px;*/
 }
 
-  @media (max-width:600px){
-    .contact-us { width: 70%; margin: 0 auto; background: none;}
+  @media (max-width:480px){
+    .contact-us { width: 85%; margin: 0 auto; background: none;}
     .contact-us::before {background: none;}
     .contact-form { width: 100%;}
 
@@ -360,7 +361,7 @@ input[type="checkbox"]:checked {
       flex-direction: row;
       justify-content: space-between;
     }
-    .quarter { width: 180px;}
+    .quarter { width: 190.4px;}
     .half {
       margin-bottom: 15px;
     }
@@ -377,10 +378,21 @@ input[type="checkbox"]:checked {
     }
   }
 
+  @media (max-width:360px){
+    .quarter { width: 142.8px;}
+  }
 
 
+/*1 7 1 7 1*/
 
 
+.error-msg {
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
   .submit-success {
     width: 100%;
     height: 160px;

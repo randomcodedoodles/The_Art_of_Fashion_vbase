@@ -29,6 +29,12 @@
 }
 .service-content p{border:1px solid yellow;
     text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.service-content p:last-child{
+    margin-bottom: 0px;
 }
 
 .service-content { border: 1px solid purple;
@@ -59,14 +65,17 @@
     color: white;
 }
 
-@media (max-width:600px){
+@media (max-width:480px){
     .service-content { border: 1px solid purple;
         -webkit-column-count: 1;
           -moz-column-count: 1;
                column-count: 1;
     }
     .contact-btn { width: 100%;}
-    .service { width: 90%; }
+    .service { width: 85%; }
+  }
+  @media (max-width:360px){
+    .service { width: 85%; }
   }
 
 

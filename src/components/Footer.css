@@ -11,6 +11,9 @@
     margin: 0 auto;
   }
 
-  @media (max-width:600px){
-    .App-footer .footer-mark { width: 90%; }
+  @media (max-width:480px){
+    .App-footer .footer-mark { width: 85%; }
+  }
+  @media (max-width:360px){
+    .App-footer .footer-mark { width: 85%; }
   }

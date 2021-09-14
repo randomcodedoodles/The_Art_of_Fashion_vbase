@@ -154,6 +154,7 @@ export const ContactUs = () => {
                 },
                 body: JSON.stringify(userData)
             });*/
+            /*
             //let modUserData = {...userData} //still affect userData for 3
             //let modUserData //for 4
             let modUserData = {...userData} //for 4
@@ -164,8 +165,18 @@ export const ContactUs = () => {
                 modUserData = {...userData, PhoneNumbers: []} //not affect userData //4
             }
             console.log('mod',modUserData,userData)
-            //const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", userData)
-            const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", modUserData)
+            */
+            userData.PhoneNumbers = userData.PhoneNumbers.filter(_num => _num !== "");
+            /*for(var i=0;i<userData.PhoneNumbers.length;i++){
+                if(userData.PhoneNumbers[i]==="")
+            }
+            userData.PhoneNumbers = userData.PhoneNumbers.map(_num=>{
+                if(_num==="")return "0";
+                return _num;
+            })*/
+            console.log('mod',userData)
+            const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", userData)
+            //const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", modUserData)
             console.log(res);
 
             if(res.status === 200 || res.statusText === "OK" || res.data.Status === "1" || res.data.Errors.length === 0){
@@ -290,7 +301,7 @@ export const ContactUs = () => {
                             </>):<></>}
                             {errMsg.length > 0 ? (
                             errMsg.map((_errmsg, _index) => (
-                                <div className="error-msg">{_errmsg.FieldName} : {_errmsg.MessageCode}</div>
+                                <p className="error-msg">* {_errmsg.FieldName} : {_errmsg.MessageCode}! </p>
                             ))
                             ) : <></>}
                             <button type="submit" className="submit-btn">Submit</button>
@@ -302,7 +313,7 @@ export const ContactUs = () => {
             </div>
             
         </section>
-    )
+    )//<div className="error-msg">* {_errmsg.FieldName} : {_errmsg.MessageCode}! </div>
 }
 //<textarea /> <input type="text" />
 //<input type="checkbox" id="bIncludeAddressDetails" name="bIncludeAddressDetails" onChange={addAddressDetails} value={userData.bIncludeAddressDetails}></input>

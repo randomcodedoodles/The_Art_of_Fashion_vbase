@@ -10,7 +10,26 @@
   .App-header nav .logo{
     width: 166px;
     border: 2px solid green;
-    
+    /*below added*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*below added*/
+  .App-header nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*above no effect as .logo only defined width - NOT both width & height*/
+  }
+
+  /*below added for hover clickable heights*/
+  .App-header nav, .App-header nav .nav-links, .App-header nav .nav-links ul, .App-header nav .nav-links ul li {
+    height: 100%;
+  }
+  /*below added for hover clickable heights*/
+  .App-header nav .nav-links ul {
+    margin: 0;
   }
   .App-header nav .nav-links{
     flex: 1;
@@ -26,17 +45,28 @@
   .App-header .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 18px;
+    padding: 0px 18px;
     position: relative;
     font-size: 9px;
     letter-spacing: 2px;
     font-weight: 500;
     border:2px solid red;
     text-transform: uppercase;
+    /*below added for hover clickable heights*/
+    display: flex;
+    /*display: inline-flex;*/
+
   }
   .App-header .nav-links ul li a{
     text-decoration: none;
     border: 2px solid yellow;
+    /*below added for hover clickable heights*/
+    height: 100%; /*need display flex in ul li above*/
+    width: 100%; /*restricted by li padding; opt when narrowwidth*/
+    /*vertical-align: middle;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: center; /*opt*/
   }
   .App-header .nav-links ul li:last-child {
     padding-right: 26px;
@@ -51,12 +81,12 @@
     color:mediumblue;
   }
   
-  @media (max-width:600px){
+  @media (max-width:480px) {
     .App-header {
-      width: 600px;
+      width: 480px;
       height: 58px;
     }
-    .App-header nav .nav-links{
+    .App-header nav .nav-links, .login{
       display: none;
     }
     .App-header nav, .App-header nav .logo {
@@ -72,6 +102,12 @@
       
       height: 50%;
       /*object-fit: fill;*/
-    
+      /*object-fit: contain;*/
+    }
+  }
+
+  @media (max-width:360px) {
+    .App-header {
+      width: 360px;
     }
   }

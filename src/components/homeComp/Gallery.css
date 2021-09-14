@@ -21,14 +21,21 @@
     left: 0;
     background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
 }
-
+.mySlide {
+    /*height:auto; 
+    min-height: 430px;*/
+    height: 430px;
+    overflow: hidden;
+}
 .mySlide img{
     width: 100%;
     /*width: 1600px;*/
     object-fit: cover;
-    overflow: hidden;
-    height: 430px;
+    /*overflow: hidden;*/
+    /*height: 430px;*/ /*for height auto & min-height 430px in .mySLide*/
+    height: 100%; /*for min-height 430px in .mySLide*/
     object-position: 0 27%;
+    object-position: center 27%
 }
 /*
 .mySlide .slide-text{ border: 1px solid green;
@@ -95,6 +102,16 @@
     text-align: left;
     color: white;
 }*/
+
+
+.mySlide .slide-text h1 {
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.mySlide .slide-text p {
+    font-weight:lighter;
+}
 .contactus-btn {
     width: 120px;
     height: 40px;
@@ -104,6 +121,10 @@
     border-radius: 3px;
     color: white;
     margin-top: 10px;
+
+    font-size:7px;
+    font-weight: bold;
+    letter-spacing: .5px;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -111,6 +132,7 @@
     height: 35px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 2px;
+    cursor: pointer;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
     content: "";
@@ -121,11 +143,29 @@
 .swiper-button-next::after{
     transform: rotate(180deg)
 }
+.swiper-button-next { right: 0;}
+.swiper-button-prev {left: 0;}
 
-@media (max-width:600px){
+@media (max-width:480px){
+    .mySlide {
+        height: 547.7647px;
+    }
     .mySlide .slide-text {
-        width: 90%;
+        width: 85%;
         left: 30px;
     }
     .contactus-btn { width: 100%; }
+    .swiper-button-next, .swiper-button-prev {
+        background: transparent;
+        cursor:none;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after {
+        background-image: none;
+    }
+  }
+  @media (max-width:360px){
+    .mySlide .slide-text {
+        width: 85%;
+        left: 30px;
+    }
   }

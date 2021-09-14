@@ -46,14 +46,21 @@
     width: 455px;
     text-align: left;
     padding: 27px;
-    background: brown;
+    background: rgb(95, 91, 91);
     color: white;
     
     border-radius: 5px;
 }
 
-.individual-content h1 {
+.individual-content h3 {
     margin-top: 0;
+    font-weight: normal;
+}
+.individual-content p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px; /*remove login-btn margin-top 9px*/
 }
 .login-btn {
     width: 120px;
@@ -62,12 +69,14 @@
     border: none;
     border-radius: 3px;
     color: royalblue;
-    margin-top: 9px;
+    /*margin-top: 9px;*/
+    font-weight: bold;
+    font-size: 12px;
 }
 
-@media (max-width:600px){
+@media (max-width:480px){
     .individual-content {
-        width: calcs(90%-54px);
+        width: 354px; /*calcs(85%-54px);*/
         /*margin: 0 auto;*/
         /*left: 30px;*/
         font-size: 10px;
@@ -78,8 +87,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        min-height: 350px;
+        background-size: cover;
     }
     .login-btn {
         width: 100%;
     }
   }
+
+  @media (max-width:360px){
+    .individual-content {
+        width: 252px; /*calcs(85%-54px);*/
+    }
+}

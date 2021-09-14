@@ -24,7 +24,7 @@ export const Individual = () => {
     return (
         <div className="individual">
             <div className="individual-content">
-                    <h1>fhdg gjisuio hda hofdos hif gfd </h1>
+                    <h3>Nulla sem urna, dictum sed nisi in, viverra rutrum neque </h3>
                     <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Obcaecati libero asperiores amet nam labore ea! Cupiditate, amet omnis corporis, iure magni enim quod eius error mollitia temporibus voluptatum perspiciatis blanditiis! 

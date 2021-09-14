@@ -31,7 +31,13 @@
 
 
 
-@media (max-width:600px){
-  .App-container {width: 600px;}
-  .App-header, .App-footer {width: 600px;}
+@media (max-width:480px){
+  .App-container {width: 480px;}
+  .App-header, .App-footer {width: 480px;}
+}
+
+
+@media (max-width:360px){
+  .App-container {width: 360px;}
+  .App-header, .App-footer {width: 360px;}
 }
