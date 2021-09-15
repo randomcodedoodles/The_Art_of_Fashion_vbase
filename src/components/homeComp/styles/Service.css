@@ -42,6 +42,7 @@
     height: 40px;
     background-color: royalblue;
     border: none;
+    outline: none;
     cursor: pointer;
     /*text-decoration: none;*/
     border-radius: 3px;

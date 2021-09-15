@@ -163,7 +163,7 @@ export const ContactUs = () => {
                             <div className="form-group message primary">
                                 <label htmlFor="Message" className="form-label">Message: <span className="max-length-req">Maximum text length is 500 characters</span> </label>
                                 
-                                <textarea id="Message" name="Message" className="form-control" value={userData.Message} required maxLength="5" onChange={handleInputChange}/>
+                                <textarea id="Message" name="Message" className="form-control" value={userData.Message} required maxLength="500" onChange={handleInputChange}/>
                             </div>
                             <div className="add-address primary">
                                 <div className={`checkbox ${userData.bIncludeAddressDetails ? "checked" : ""}`} id="bIncludeAddressDetails" name="bIncludeAddressDetails" onClick={addAddressDetails} value={userData.bIncludeAddressDetails}></div>

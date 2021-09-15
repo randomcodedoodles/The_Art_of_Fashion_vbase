@@ -58,6 +58,7 @@
     height: 40px;
     background-color: royalblue;
     border: none;
+    outline: none;
     border-radius: 3px;
     color: white;
 }
