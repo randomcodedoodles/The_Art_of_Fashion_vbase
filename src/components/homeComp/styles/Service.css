@@ -47,6 +47,8 @@
     /*text-decoration: none;*/
     border-radius: 3px;
     color: white;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 @media (max-width:480px){

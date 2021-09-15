@@ -12,14 +12,16 @@ export const Introduction = () => {
                 </p>
                 <ul>
                     <li><span>Te obcaecati libero asperiores amet nam labore ea!</span></li>
-                    <li><span>Te velit, consectetur provident! Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></li>
+                    <li><span>Te velit, consectetur provident! Ut vis semper abhorreant.</span></li>
                     <li><span>Ut vero, quasi saepe. Laborum, minus.</span></li>
                     <li><span>Ut explicabo maxime quae quod. Vero, quasi saepe. Laborum, minus.</span></li>
                 </ul>
                 <button className="detail-btn">Learn more</button>
             </div>
-            <div className="right-img">
-                <img src={rightImg} alt="office" />
+            <div className="right-part">
+                <div className="right-img">
+                    <img src={rightImg} alt="office" />
+                </div>
             </div>
             
         </div>
