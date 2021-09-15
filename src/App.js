@@ -8,19 +8,16 @@ import { AboutUs } from "./components/aboutUsComp/AboutUs";
 import { Footer } from "./components/Footer";
 
 function App() {
-  //useEffect(()=>{window.scroll(150, 0);},[]) //window.scrollTo(150, 0);
   useEffect(()=>{
-    console.log(document.body.clientWidth, window.innerWidth, document.documentElement.clientWidth, window.screen.width)
-    console.log(document.body.scrollWidth, window.innerWidth);
-    //const handleHorizontalScrollBarWhenLoaded = () => window.scrollTo((window.innerWidth - document.body.clientWidth)*10, 0);
+    //console.log(document.body.scrollWidth, document.body.clientWidth, window.innerWidth, document.documentElement.clientWidth, window.screen.width)
+
     const handleHorizontalScrollBarWhenLoaded = () => window.scrollTo((document.body.scrollWidth - window.innerWidth) / 2, 0);
     window.addEventListener("load", handleHorizontalScrollBarWhenLoaded);
 
     return () => window.removeEventListener("load", handleHorizontalScrollBarWhenLoaded);
   },[]) 
   
-  //useEffect(()=>{window.scrollTo((document.body.scrollWidth - window.innerWidth) / 2, 0);},[])
-  //useEffect(()=>{console.log(document.body.scrollWidth, document.body.clientWidth, window.innerWidth)},[])
+  //useEffect(()=>{window.scroll((document.body.scrollWidth - window.innerWidth) / 2, 0);},[])
 
   return (
     <div className="App">
