@@ -1,3 +1,7 @@
+.App-footer {
+ width: 100%;
+}
+
 .App-footer .footer-mark{
     height: 60px;
     border-top: 1px solid grey;
@@ -12,8 +16,10 @@
   }
 
   @media (max-width:480px){
+    .App-footer {width: 480px;}
     .App-footer .footer-mark { width: 85%; }
   }
   @media (max-width:360px){
+    .App-footer {width: 360px;}
     .App-footer .footer-mark { width: 85%; }
   }

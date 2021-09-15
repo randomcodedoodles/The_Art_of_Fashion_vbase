@@ -24,6 +24,7 @@ export const ContactUs = () => {
     });
 
     const [errMsg, setErrMsg] = useState([]);
+    const [submitted, setSubmitted] = useState(false);
 
     
     const handleInputChange = (e) => { 
@@ -88,7 +89,7 @@ export const ContactUs = () => {
           })
     }
 
-    const [submitted, setSubmitted] = useState(false);
+    
     
     const postUserData = async () => {
         try {
