@@ -69,7 +69,7 @@
 .right-part {
     width: 510px;
     height: auto;
-    min-height: 310px; /*opt*/
+    /*min-height: 310px; web not mobile*/
     height: 100%;
     padding: 0;
     display: flex;
