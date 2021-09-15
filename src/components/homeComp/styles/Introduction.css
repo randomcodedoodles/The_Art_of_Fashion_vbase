@@ -115,7 +115,7 @@
         width: 85%;
         margin: 40px auto;
     }
-    .left-brief, .right-img{ width: 100%; margin: 0 auto;}
+    .left-brief, .right-part, .right-img{ width: 100%; margin: 0 auto;}
     .left-brief {margin-top: 30px; height: auto;}
     .left-brief ul {margin-bottom: 20px;}
     .right-img {height: 272px;}
