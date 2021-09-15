@@ -1,7 +1,9 @@
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 import "./styles/Service.css"
 
 export const Service = () => {
+    const history = useHistory();
+
     return (
         <div className="service">
             <h1>Sed libero justo, lobortis sit amet suscipit non</h1>
@@ -40,3 +42,5 @@ export const Service = () => {
         </div>
     )
 }
+//<Link to='/contact-us'> <button className="contact-btn"> Contact us </button> </Link>
+//<button className="contact-btn" onClick={() => history.push('/contact-us')}>Contact us</button>
