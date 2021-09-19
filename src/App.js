@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './styles/App.css';
 import { Header } from './components/Header';
@@ -11,7 +11,7 @@ import ScrollToTopCenter from "./ScrollToTop";
 function App() {
 
   useEffect(()=>{
-    //console.log(document.body.scrollWidth, document.body.clientWidth, window.innerWidth, document.documentElement.clientWidth, window.screen.width)
+    console.log(document.body.scrollWidth, document.body.clientWidth, window.innerWidth, document.documentElement.clientWidth, window.screen.width)
 
     const handleHorizontalScrollBarWhenLoaded = () => window.scrollTo((document.body.scrollWidth - window.innerWidth) / 2, 0);
     window.addEventListener("load", handleHorizontalScrollBarWhenLoaded);
@@ -20,18 +20,22 @@ function App() {
   },[]) 
 
   
+  const [dropDownManuShown, setDropDownManuShown] = useState(false);
+  const showDropDownManu = () => setDropDownManuShown(!dropDownManuShown);
+  const alwaysHideDropDownManu = () => setDropDownManuShown(false);
+
   return (
     <div className="App">
       <Router>
         <ScrollToTopCenter>
-          <Header />
+          <Header dropDownManuShown={dropDownManuShown} showDropDownManu={showDropDownManu} alwaysHideDropDownManu={alwaysHideDropDownManu}/>
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about-us" component={AboutUs} />
-            <Route path="/contact-us" component={ContactUs} />
+            <Route path="/" exact render={(props) => (<Home dropDownManuShown={dropDownManuShown} {...props}/>)} />
+            <Route path="/about-us" children={ <AboutUs dropDownManuShown={dropDownManuShown} />} />
+            <Route path="/contact-us"><ContactUs dropDownManuShown={dropDownManuShown}/> </Route>
             <Route>404 Not Found!</Route>
           </Switch>
-          <Footer />
+          <Footer dropDownManuShown={dropDownManuShown}/>
         </ScrollToTopCenter>
       </Router>
     </div>

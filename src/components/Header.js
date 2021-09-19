@@ -1,23 +1,31 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../Resources/Logo.svg'
 import "./styles/Header.css"
 
 
-export const Header = () => {
+export const Header = (props) => {
+
+    //const [dropDownManuShown, setDropDownManuShown] = useState(false);
+    const {dropDownManuShown, showDropDownManu, alwaysHideDropDownManu} = props;
+
     return (
         <header className="App-header">
-            <nav>
-                <div className="logo"><img src={logo} alt="company"/></div>
+            <nav className={dropDownManuShown ? "drop-down" : ""}>
+                <div className="logo"
+                    onClick={showDropDownManu}>
+                    <img src={logo} alt="company"/>
+                </div>
                 <div className="nav-links">
                     <ul>
                         <li>
-                            <Link to='/'> HOME </Link>
+                            <Link to='/' onClick={alwaysHideDropDownManu}> HOME </Link>
                         </li>
                         <li>
-                            <Link to='/about-us'> ABOUT US </Link>
+                            <Link to='/about-us' onClick={alwaysHideDropDownManu}> ABOUT US </Link>
                         </li>
                         <li>
-                            <Link to='/contact-us'> CONTACT US </Link>
+                            <Link to='/contact-us' onClick={alwaysHideDropDownManu}> CONTACT US </Link>
                         </li>
                     </ul>
                 </div>
@@ -26,3 +34,14 @@ export const Header = () => {
         </header>
     )
 }
+
+
+
+
+
+
+
+//className={`logo ${dropDownManuShown ? 'drop-down':''}`} {dropDownManuShown ? "logo drop-down" : "logo"}
+//onClick={() => setDropDownManuShown(!dropDownManuShown)} onClick={() => {setDropDownManuShown(!dropDownManuShown)}}
+//onClick={() => {setDropDownManuShown(!dropDownManuShown); reutrn;}}
+//onClick={showDropDownManu}  onClick={() => {showDropDownManu();}} onClick={() => {showDropDownManu(); return;}} onClick={() => showDropDownManu()}

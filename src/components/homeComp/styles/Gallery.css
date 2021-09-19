@@ -103,10 +103,41 @@
 .swiper-button-next { right: 0;}
 .swiper-button-prev {left: 0;}
 
-@media (max-width:480px){
-    .mySlide {
-        height: 547.7647px;
+
+@media (max-width:1024px) { 
+    .mySlide { height: 453.9px;}
+    .mySlide .slide-text {
+        width: 390px; /*435.2px;*/
+        left: 76.8px;
     }
+  }
+  @media (max-width:960px) {
+    .mySlide { height: 459.33px;}
+    .mySlide .slide-text {
+        width: 370px;/*408px;*/
+        left: 72px;
+    }
+  }
+  @media (max-width:768px) { 
+    .mySlide {height: 477.82px;}
+    .mySlide .slide-text {
+        width: 85%;
+        left: 57.6px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+  }
+  @media (max-width:600px) { 
+    .mySlide {height: 508.17px;}
+    .mySlide .slide-text {
+        width: 85%;
+        left: 45px;
+    }
+  }
+
+@media (max-width:480px){
+    .mySlide { height: 547.7647px; }
     .mySlide .slide-text {
         width: 85%;
         left: 30px;

@@ -21,8 +21,22 @@
 
 
 
-
-
+/*
+@media (max-width:1280px) {
+  .App {width: 1280px;}
+}*/
+@media (max-width:1024px) { 
+  .App {width: 1024px;}
+}
+@media (max-width:960px) {
+  .App {width: 960px;}
+}
+@media (max-width:768px) { 
+  .App {width: 768px;}
+}
+@media (max-width:600px) { 
+  .App {width: 600px;}
+}
 
 @media (max-width:480px){
   .App {width: 480px;}

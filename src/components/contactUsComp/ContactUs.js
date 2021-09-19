@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
+import "../styles/App-container.css"
 import "./styles/ContactUs.css"
 import axios from "axios"
 import valid from "../../Resources/Icon_Valid.svg"
 
 
 
-export const ContactUs = () => {
+export const ContactUs = (props) => {
 
     const [userData, setUserData] = useState({
         FullName: "",
@@ -123,7 +124,7 @@ export const ContactUs = () => {
     }
 
     return (
-        <section className="App-container">
+        <section className={`App-container ${props.dropDownManuShown ? 'drop-down' : ''}`}>
             <div className="contact-us">
                     <div className="contact-form">
                         <h3 className="contact-title"> Contact Us</h3>
@@ -154,7 +155,7 @@ export const ContactUs = () => {
                             </div>
                             {userData?.PhoneNumbers.map((_phone, _index) => {return (
                                 <div className={`form-group primary phone phone${_index}`} key={_index}>
-                                    <label htmlFor={`phone${_index}`} className="form-label">Phone Number {_index < 8 ? '0' + (_index + 1) : (_index + 1)} <span className="contact-inline">- Optional </span> </label>
+                                    <label htmlFor={`phone${_index}`} className="form-label">Phone Number {_index <= 8 ? '0' + (_index + 1) : (_index + 1)} <span className="contact-inline">- Optional </span> </label>
                                     <input type="text" id={`phone${_index}`} name={`phone${_index}`} className="form-control" value={userData?.PhoneNumbers[_index]} onChange={(e) => {handlePhoneNumberChange(e, _index)}}/>
                                 </div>
                             )})}
@@ -181,7 +182,7 @@ export const ContactUs = () => {
                                     <input type="text" id="AddressLine2" name="AddressLine2" className="form-control" value={userData?.AddressDetails?.AddressLine2} onChange={handleInputChange}/>
                                 </div>
                             </div>
-                            <div className="secondary address">
+                            <div className="secondary address district">
                                 <div className="address-1 half">
                                     <div className="secondary address-detail1">
                                         <div className="form-group quarter address-detail1">

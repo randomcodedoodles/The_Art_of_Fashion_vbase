@@ -35,7 +35,7 @@ export const Gallery = () => {
         
     return (
         <div className="gallery">
-            <Swiper navigation={true} pagination={{"dynamicBullets": true}} className="mySwiper">
+            <Swiper navigation={true} pagination={{"dynamicBullets": true}} className="mySwiper" loop>
                 {bannerItems.map((_item, _index) => {
                     return (
                         <SwiperSlide className="mySlide" key={_index}>

@@ -23,12 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100%;
   }
  
 
   .App-header nav .logo img{
     width: 100%;
-    height: 100%;
+    height: 100%; /*height: 100% in .logo above*/
     object-fit: contain;
     
   }
@@ -93,15 +95,49 @@
     font-weight: bold;
     color:mediumblue;
   }
+
+
+
+  /*
+  @media (max-width:1280px) { 
+    .App-header {width: 1280px;}
+    .App-header nav {width: 85%;}
+  }*/
+  @media (max-width:1024px) { 
+    .App {width: 1024px;}
+    .App-header nav {width: 85%;}
+  }
+  @media (max-width:960px) {
+    .App {width: 960px;}
+    .App-header nav {width: 85%;}
+  }
+  @media (max-width:768px) { 
+    .App {width: 768px;}
+    .App-header nav {width: 85%;}
+    .login { padding: 9px 25px;}
+    .App-header .nav-links ul li {padding: 0 12px; letter-spacing: 1px;}
+    .App-header .nav-links ul li:last-child {padding-right: 17px;}
+    .App-header nav .logo {width: 136px;}
+  }
+  @media (max-width:600px) { 
+    .App {width: 600px;}
+    .App-header nav {width: 85%;}
+    .login { padding: 9px 17px;}
+    .App-header nav .logo {width: 128px;}
+    .App-header .nav-links ul li {padding: 0 10px; letter-spacing: 0px;}
+    .App-header .nav-links ul li:last-child {padding-right: 15px;}
+  }
+
   
   @media (max-width:480px) {
+    .App {width: 480px;} /*if not added; .App will use 600px in this Header.css although .App width: 360px in App.css*/
     .App-header {
       width: 480px;
       height: 58px;
     }
     .App-header nav .nav-links, .login{
-      display: none;
-    }
+      display: none;  /*default when not click div img*/
+    } /*
     .App-header nav, .App-header nav .logo {
       width: 100%;
       
@@ -113,13 +149,110 @@
     .App-header nav .logo img {
       width: 50%;
       height: 50%;
-      /*object-fit: contain;*/
+      /*object-fit: contain;
+    }*/
+    .App-header nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .App-header nav .logo {
+      height: 100%;
+      width: 130px;
+      width: 162.5px; /*div .logo onClick manu*/
+      cursor: pointer;
+      
+      /*position: relative;*/
+    }
+    .App-header nav .logo img {
+      width: 125%; /*img onClick manu*/
+      width: 100%; /*img onClick manu*/
+    }
+    /*
+    .App-header nav .logo.drop-down {
+      position: relative;
+    }
+    .App-header nav .logo.drop-down::after {
+      content: "";
+      position: absolute;
+      top: 58px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: blanchedalmond;
+      background-color: cornsilk;
+
+    }*/
+    .App-header nav, .App-header .drop-down {
+      position: relative;
+    }
+    /*.App-header .drop-down::after { /*NOT .App-header nav::after
+      content: "";
+      position: absolute;
+      top: 58px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: auto;
+      z-index: 5;
+      background-color: white; /*whitesmoke;
+    }*/
+    .App-header .drop-down .nav-links {
+      display: flex;
+      position: absolute;
+      top: 58px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: auto;
+      z-index: 5;
+      background-color: white; /*whitesmoke;*/
+    }
+    .App-header .drop-down .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+    }
+    .App-header .drop-down .nav-links ul li {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      border-top: rgb(173, 170, 170);
+    }
+    .App-header .drop-down .nav-links ul li a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 55px;
+      letter-spacing: 2px;
+      font-size: 12px;
+      border-top: 1px solid rgb(173, 170, 170);
     }
   }
 
   @media (max-width:360px) {
+    .App {width: 360px;} /*if not included; .App will use 480px in this Header.css although .App width: 360px in App.css*/
     .App-header {
       width: 360px;
+    }
+
+    .App-header nav {
+      width: 100%;
+      height: 100%;
+    }
+    .App-header nav .logo {
+      height: 100%;
+      width: 156.5px;
+      cursor: pointer;
     }
   }
 

@@ -1,3 +1,4 @@
+
 .about-us {
     width: 68%;
     margin: 34px auto;
@@ -83,11 +84,37 @@
   }
 
 
+
+
+
+
+
+  @media (max-width:1024px) { 
+    .about-us { width: 85%; margin: 34px auto;} /*about-us title h3 remain margin-top*/
+    .about-us .officeImg {width: 480px;}
+  }
+  @media (max-width:960px) {
+    .about-us { width: 85%; margin: 34px auto;}
+    .about-us .officeImg {width: 450px; width: 480px;}
+  }
+  @media (max-width:768px) { 
+    .about-us { width: 85%; margin: 34px auto;}
+    .about-us .officeImg {width: 360px; width: 450px;}
+  }
+  @media (max-width:600px) { 
+    .about-us { width: 85%; margin: 34px auto;}
+    .about-us .officeImg {width: 281.25px; width: 420px;}
+  }
+
+
   @media (max-width:480px){
-    .about-us { width: 85%; margin: 0 auto;}
+    .about-us { width: 85%; margin: 0px auto;}
     .about-us .officeImg { width: 408px; }
     .afterImg p:last-child {
       margin-bottom: 40px;
+    }
+    .about-us h3 {
+      margin-top: 44px;
     }
   }
 

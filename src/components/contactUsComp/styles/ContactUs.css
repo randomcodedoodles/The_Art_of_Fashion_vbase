@@ -92,7 +92,7 @@
 /*[type="checkbox"]:not(:checked)*/
 .form-control, .checkbox {
   outline: none;
-  background-color: rgba(214, 214, 218, 0.5);
+  background-color: rgba(214, 214, 218, 0.2);
   border: 1px solid rgb(128, 128, 128, 0.5);
   -moz-box-sizing: border-box;
      -ms-box-sizing: border-box;
@@ -206,10 +206,82 @@
 }
 
 
+
+
+@media (max-width:1024px) { 
+  .contact-us { width: 85%; margin: 0 auto; min-height: 707px; background-position: right top -38px;}
+  .contact-form {width: 435px; width: 415px;}
+  .half {width: 200px; width: 197.5px; width: 197px;} 
+  .quarter {width: 87.5px;}
+  .secondary.address.district {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .address-1.half, .address-2.half {width: 415px;}
+  .quarter {
+    width: 100%;
+    width: 197px;
+  }
+  .submit-btn {
+    margin-top: 13px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:960px) {
+  .contact-us { width: 85%; margin: 0 auto;}
+  .contact-form {width: 390px;}
+  .half {width: 185px; } 
+  .quarter {width: 82.5px;}
+  .secondary.address.district {
+    display: flex;
+    flex-direction: column;
+  }
+  .address-1.half, .address-2.half {width: 390px;}
+  .quarter {
+    width: 100%;
+    width: 185px;
+  }
+}
+@media (max-width:768px) { 
+  .contact-us { 
+    width: 68%; 
+    margin: 0 auto; 
+    background-position: center; 
+    background-size: 80% auto;
+    /*background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;*/
+    /*background: transparent url('../../../Resources/Img_Contact.png') no-repeat;*/
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.7) 100%), 
+                  url('../../../Resources/Img_Contact.png') repeat 0 0;*/
+  }
+  .contact-form {width: 100%;}
+  .half {width: 248px; } 
+  .quarter {width: 110.885px;}
+  .secondary.address.district {
+    display: flex;
+    flex-direction: row;
+  }
+  .address-1.half, .address-2.half {width: 248px;}
+}
+@media (max-width:600px) { 
+  .contact-us { width: 85%; margin: 0 auto;}
+  .contact-form {width: 100%;}
+  .half {width: 240px; width: 242px;} 
+  .quarter {width: 105px; width: 108px;}
+  .secondary.address.district {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
   @media (max-width:480px){
     .contact-us { width: 85%; margin: 0 auto; background: none;}
     .contact-us::before {background: none;}
     .contact-form { width: 100%;}
+
+    .contact-title {padding-top: 44px;}
 
     .secondary {
       display: flex;
@@ -217,6 +289,10 @@
     }
     .quarter, .half {
       width: 100%;
+    }
+    .secondary.address.district {
+      display: flex;
+      flex-direction: column;
     }
     .secondary.address-detail1, .secondary.address-detail2 {
       display: flex;
@@ -238,10 +314,13 @@
       margin-top: 15px;
       margin-bottom: 30px;
     }
+
+    .address-1.half, .address-2.half {width: 408px;}
   }
 
   @media (max-width:360px){
     .quarter { width: 142.8px;}
+    .address-1.half, .address-2.half {width: 306px;}
   }
 
 

@@ -1,10 +1,10 @@
-
+import "../styles/App-container.css"
 import "./styles/AboutUs.css"
 import midImg from "../../Resources/shutterstock_696636415.jpg"
 
-export const AboutUs = () => {
+export const AboutUs = (props) => {
     return (
-        <section className="App-container">
+        <section className={`App-container ${props.dropDownManuShown ? 'drop-down' : ''}`}>
             <div className="about-us">
                 
                 <div className="beforeImg">
