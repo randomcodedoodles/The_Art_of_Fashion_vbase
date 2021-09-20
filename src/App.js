@@ -6,7 +6,7 @@ import { Home } from "./components/homeComp/Home";
 import { ContactUs } from "./components/contactUsComp/ContactUs";
 import { AboutUs } from "./components/aboutUsComp/AboutUs";
 import { Footer } from "./components/Footer";
-import ScrollToTopCenter from "./ScrollToTop";
+import ScrollToTopCenter from "./ScrollToTopCenter";
 
 function App() {
 

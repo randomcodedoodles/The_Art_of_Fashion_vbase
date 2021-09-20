@@ -1,9 +1,10 @@
 import { Fragment, useEffect } from "react";
-import { useLocation, withRouter } from "react-router-dom";
+import { useLocation, withRouter, useHistory } from "react-router-dom";
 
 function ScrollToTop (props) { 
     
-    const { history, children } = props; //or {location:pathname}
+    //const history = useHistory(); //ok alternatively 
+    const { history, children } = props; //or {location:pathname} //ok
     const location = useLocation(); //or const { pathname } = useLocation()
 
     useEffect(() => {
