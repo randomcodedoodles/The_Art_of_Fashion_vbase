@@ -13,10 +13,10 @@ import "./styles/Gallery.css";
 
 SwiperCore.use([Pagination, Navigation]);
   
-export const Gallery = () => {
+export const Gallery = ({ history }) => { //or props -> props.history //ok
 
     const [bannerItems, setBannerItems] = useState([]);
-    const history = useHistory();
+    //const history = useHistory(); //alternatively ok
 
         const fetchBannerItems = async () => {
             try{
@@ -54,3 +54,7 @@ export const Gallery = () => {
         </div>
     )
 }
+
+
+
+//props.history.push or history.push or Link wrapped by button --- see Service.js

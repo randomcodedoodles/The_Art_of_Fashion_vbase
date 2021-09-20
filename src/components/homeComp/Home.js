@@ -9,7 +9,7 @@ import "../styles/App-container.css"
 export const Home = (props) => {
     return (
         <section className={`App-container ${props.dropDownManuShown ? 'drop-down' : ''}`}>
-            <Gallery />
+            <Gallery {...props} />
             <Introduction />
             <Individual />
             <Service />

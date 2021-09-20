@@ -4,7 +4,7 @@ import { useLocation, withRouter } from "react-router-dom";
 function ScrollToTop (props) { 
     
     const { history, children } = props; //or {location:pathname}
-    const location = useLocation(); //or {pathname}
+    const location = useLocation(); //or const { pathname } = useLocation()
 
     useEffect(() => {
       const unlisten = history.listen(() => {
@@ -17,7 +17,7 @@ function ScrollToTop (props) {
       return () => {
         unlisten();
       }
-    }, [location.pathname]); //or [] or props.location.pathname
+    }, [location.pathname]); //or [] or props.location.pathname //or [pathname]
   
     return <Fragment>{children}</Fragment>; //or return {children}; but must be wrapped in withRouter
   }

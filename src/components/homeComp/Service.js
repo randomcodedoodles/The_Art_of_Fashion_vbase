@@ -44,3 +44,4 @@ export const Service = () => {
 }
 //<Link to='/contact-us'> <button className="contact-btn"> Contact us </button> </Link>
 //<button className="contact-btn" onClick={() => history.push('/contact-us')}>Contact us</button>
+//see Gallery.js
