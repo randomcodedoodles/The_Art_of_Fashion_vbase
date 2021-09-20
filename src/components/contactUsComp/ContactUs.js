@@ -94,8 +94,11 @@ export const ContactUs = (props) => {
     
     const postUserData = async () => {
         try {
-            userData.PhoneNumbers = userData.PhoneNumbers.filter(_num => _num !== "");
-            const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", userData)
+            //userData.PhoneNumbers = userData.PhoneNumbers.filter(_num => _num !== ""); //setUserData
+            const modUserData = {...userData, PhoneNumbers: userData.PhoneNumbers.filter(_num => _num !== "")};
+            //let modUserData = {...userData}; //modUserData.PhoneNumbers = modUserData.PhoneNumbers.filter(_num => _num !== "");
+            //modUserData.PhoneNumbers = userData.PhoneNumbers.filter(_num => _num !== "");
+            const res = await axios.post("https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit", modUserData)//userData
 
             if(res.status === 200 || res.statusText === "OK" || res.data.Status === "1" || res.data.Errors.length === 0){
                 setSubmitted(true);
