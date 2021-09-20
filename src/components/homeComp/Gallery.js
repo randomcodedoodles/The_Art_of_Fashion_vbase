@@ -39,10 +39,10 @@ export const Gallery = ({ history }) => { //or props -> props.history //ok
                 {bannerItems.map((_item, _index) => {
                     return (
                         <SwiperSlide className="mySlide" key={_index}>
-                            <img src={_item.ImageUrl} alt="banner" />
+                            <img src={bannerItems[_index+1 === bannerItems.length ? 0 : (_index+1)].ImageUrl} alt="banner" />
                             <div className="slide-text">
-                                        <h1>{_item.Title}</h1>
-                                        <p>{_item.Subtitle}</p>
+                                        <h1>{bannerItems[_index+1 === bannerItems.length ? 0 : (_index+1)].Title}</h1>
+                                        <p>{bannerItems[_index+1 === bannerItems.length ? 0 : (_index+1)].Subtitle}</p>
                                         <button className="contactus-btn" onClick={() => history.push('/contact-us')}>Contact us</button>
                                     
                             </div>
@@ -51,10 +51,13 @@ export const Gallery = ({ history }) => { //or props -> props.history //ok
                 })}
             </Swiper>
             
-        </div>
+        </div> 
     )
 }
 
 
 
 //props.history.push or history.push or Link wrapped by button --- see Service.js
+//<img src={_item.ImageUrl} alt="banner" />  <h1>{_item.Title}</h1>  <p>{_item.Subtitle}</p>
+//navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev',}
+//pagination: {el: '.swiper-pagination', type: 'bullets',},
